@@ -1,0 +1,38 @@
+@extends('layouts.app')
+@section('content')
+    <div class="row">
+        <div class="col-lg-12 margin-tb">
+            <div class="pull-left">
+                <h2> Show Product</h2>
+            </div>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('subtypes.index') }}"> Back</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>ID Senjata:</strong>
+                {{ $subtype->id_subjenis }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Nama Senjata:</strong>
+                {{ $subtype->subjenis }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>warna_subjenis:</strong>
+                {{ $subtype->warna_subjenis }}
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>skin_subjenis:</strong>
+                {{ $subtype->skin_subjenis }}
+    </div>
+@endsection
+<p class="text-center text-primary"><small>Tutorial by LaravelTuts.com</small></p>
